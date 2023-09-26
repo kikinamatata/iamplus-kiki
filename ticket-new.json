@@ -1,0 +1,22 @@
+
+{
+    "@context":"http://schema.org",
+    "@type":"Movie",
+    "name":"Iraivan",
+    "url":"https://paytm.com/movies",
+    "genre":"drama",
+    "image":"https://assetscdn1.paytm.com/images/cinema/iraivan__705x750-9774b880-5b7e-11ee-8273-793d5ca08c06.jpg",
+    "inLanguage":"Tamil",
+    "duration":"PT153M",
+    "datePublished":"2023-09-28",
+    "releasedEvent":{
+        "@context":"http://schema.org",
+        "@type":"PublicationEvent",
+        "startDate":"2023-09-28",
+        "location":{
+            "@type":"Country",
+            "name":"IN"
+        }
+    }
+}
+//"New ReleaseIraivanATamilBook Ticket"
