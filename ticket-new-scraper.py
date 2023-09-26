@@ -2,19 +2,25 @@ import asyncio
 from playwright.async_api import async_playwright
 import json
 import csv
+from typing import List
+
+class Cinema:
+    def __init__(self, name:str, showtimes:List[str]):
+        self.name = name
+        self.showtimes = showtimes
+
+class ShowDetails:
+    def __init__(self, date:str, cinemas:List[Cinema]=None):
+        self.date = date
+        self.cinemas = cinemas
 
 class Movie:
+    showDetails :ShowDetails = None
     def __init__(self, name, genre, language, url):
         self.name = name
         self.genre = genre
         self.language = language
         self.url = url
-
-class Cinema:
-    def __init__(self, name, showtimes):
-        self.name = name
-        self.showtimes = showtimes
-
 
 movie_list = []
 
@@ -110,6 +116,32 @@ async def extract_movie_info(div_element, index):
     # Return the extracted data as a tuple
     return name, genre, language
 
+async def get_show_details(context,url, index):
+    page = await context.new_page()
+    await page.goto(url)
+   # Find the div elements of Show Details
+    div_cinema_elements = await page.query_selector_all('div.MovieSessionsListingDesktop_movieSessions__YBUAu')
+    print(f'Movie {index +1}:',url)
+    for index_cinema, div_element in enumerate(div_cinema_elements):
+        # Find the first anchor (<a>) element within the current div
+        anchor_element = await div_element.query_selector('a')
+
+        if anchor_element:
+            # Get the "href" attribute value
+            href_value = base_url + await anchor_element.get_attribute('href')
+            print(f'Movie{index +1} Cinema URL {index_cinema +1}:', href_value)
+        else:
+            print(f'Movie{index +1} Cinema URL {index_cinema +1}:', ' - No anchor elements found.')
+
+        # Get the text content of the <a> element
+        text_content =await anchor_element.inner_html()
+        print(f'Movie{index +1} Cinema Name {index_cinema +1}:', text_content)
+        print()
+
+    show_details :ShowDetails = None
+    return show_details
+
+      
 
 async def scrape_website():
     async with async_playwright() as p:
@@ -142,16 +174,42 @@ async def scrape_website():
                             language=language,
                             url=href_value
                             )
+                # #Show Details
+                # page = await context.new_page()
+                # await page.goto(href_value)
+                #  # Find the div elements of Show Details
+                # div_cinema_elements = await page.query_selector_all('div.MovieSessionsListingDesktop_movieSessions__YBUAu')
+
+                # for div_element in div_cinema_elements:
+                #     # Find the first anchor (<a>) element within the current div
+                #     anchor_element = await div_element.query_selector('a')
+
+                #     if anchor_element:
+                #         # Get the "href" attribute value
+                #         href_value = base_url + await anchor_element.get_attribute('href')
+                #         print(f'>>>>>Movie 1 - Href Value:', href_value)
+                #         print()
+                #     else:
+                #         print(f'Movie 1 - No anchor elements found.')
+                #         print()
+
+                #     # Get the text content of the <a> element
+                #     text_content =await anchor_element.inner_html()
+                #     print("Text Content:", text_content)
+
+                show_details = None
+                show_details = await get_show_details(context=context,url=href_value,index=index)
+                movie.showDetails = show_details
                 movie_list.append(movie)
 
             await save_movie_list_json()
-
+            await browser.close()
 
         else:
             print('No div elements with class name "DesktopRunningMovie_movieCard__SDJqf" were found.')
 
         # Close the browser
-        await browser.close()
+       
 
 # Run the asynchronous scraping function
 if __name__ == "__main__":
