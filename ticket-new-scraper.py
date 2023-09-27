@@ -95,7 +95,7 @@ async def save_movies_to_json():
      # Save movie_list to a JSON file
     json_file = "movies.json"
     serialized_movies = []
-    save_full_movies = True
+    save_full_movies = False
     if save_full_movies :
        json_file = "movies_full.json"
     
