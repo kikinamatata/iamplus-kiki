@@ -25,6 +25,21 @@ class Movie:
         self.language = language
         self.url = url
 
+    def to_json_array(self):
+        # Create a dictionary representing the JSON node
+        json_array = []
+        date = self.showDetails.date
+        for cinema in self.showDetails.cinemas:
+            for showtime in cinema.showtimes:
+                json_node = {
+                    "MovieTitle": self.name,
+                    "Theatre": cinema.name,
+                    "MovieDate": date,
+                    "ShowTime": showtime
+                }
+                json_array.append(json_node)
+        return json_array    
+
 # Function to serialize Movie and ShowDetails instances to JSON
 def serialize_movie_and_showdetails(movie:Movie):
     return {
@@ -45,6 +60,8 @@ def serialize_movie_and_showdetails(movie:Movie):
         }
     }        
 
+        
+
 movie_list = []
 
 base_url = 'https://ticketnew.com'
@@ -64,27 +81,21 @@ async def save_movie_list_cvs():
             writer.writerow([movie.name, movie.url, movie.genre, movie.language])
 
     print(f"Movie data saved to {csv_file}")
+ 
+async def simple_serialized_movies():
+    serialized_movies = []
+    for movie in movie_list:
+        serialized_movies.extend(movie.to_json_array())
+    return serialized_movies
 
-async def save_movie_list_json():
-    # Save movie_list to a JSON file
-    json_file = "movies.json"
 
-    # Convert the movie_list to JSON format
-    movie_data_json = json.dumps([movie.__dict__ for movie in movie_list], indent=4)
-
-    # Write the JSON data to a file
-    with open(json_file, 'w') as file:
-        file.write(movie_data_json)
-
-    print(f"Movie data saved to {json_file}")   
 
  # Function to save Movie instances to a JSON file
 async def save_movies_to_json():
      # Save movie_list to a JSON file
     json_file = "movies.json"
-
-    serialized_movies = [serialize_movie_and_showdetails(movie) for movie in movie_list]
-
+    # serialized_movies =  [serialize_movie_and_showdetails(movie) for movie in movie_list]
+    serialized_movies = await simple_serialized_movies()
     with open(json_file, 'w') as json_file:
         json.dump(serialized_movies, json_file, indent=4)   
 
@@ -181,7 +192,7 @@ async def get_show_details(context,url, index):
                 
     # Get today's date
     today_date = datetime.date.today()
-    date_string = today_date.strftime("%Y-%m-%d")
+    date_string = today_date.strftime("%m-%d-%Y")
     show_details :ShowDetails = ShowDetails(date_string,cinemas=cinemas)
     return show_details
 
@@ -245,8 +256,9 @@ async def scrape_website():
                 show_details = await get_show_details(context=context,url=href_value,index=index)
                 movie.showDetails = show_details
                 movie_list.append(movie)
+                # if index == 1:
+                #    break
 
-            # await save_movie_list_json()
             await save_movies_to_json()
             await browser.close()
 
