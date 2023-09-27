@@ -5,8 +5,9 @@ import csv
 from typing import List
 
 class Cinema:
-    def __init__(self, name:str, showtimes:List[str]):
+    def __init__(self, name:str,url:str, showtimes:List[str]):
         self.name = name
+        self.url = url
         self.showtimes = showtimes
 
 class ShowDetails:
@@ -21,6 +22,26 @@ class Movie:
         self.genre = genre
         self.language = language
         self.url = url
+
+# Function to serialize Movie and ShowDetails instances to JSON
+def serialize_movie_and_showdetails(movie:Movie):
+    return {
+        "name": movie.name,
+        "genre": movie.genre,
+        "language": movie.language,
+        "url": movie.url,
+        "showDetails": {
+            "date": movie.showDetails.date,
+            "cinemas": [
+                {
+                    "name": cinema.name,
+                    "url":cinema.url,
+                    "showtimes": cinema.showtimes
+                }
+                for cinema in movie.showDetails.cinemas
+            ]
+        }
+    }        
 
 movie_list = []
 
@@ -55,20 +76,29 @@ async def save_movie_list_json():
 
     print(f"Movie data saved to {json_file}")   
 
+ # Function to save Movie instances to a JSON file
+async def save_movies_to_json():
+     # Save movie_list to a JSON file
+    json_file = "movies.json"
+
+    serialized_movies = [serialize_movie_and_showdetails(movie) for movie in movie_list]
+
+    with open(json_file, 'w') as json_file:
+        json.dump(serialized_movies, json_file, indent=4)   
+
 async def get_movie_url(div_element, base_url, index):
     href_value = ""
 
     # Find the first anchor (<a>) element within the current div
     anchor_element = await div_element.query_selector('a')
-
+    print()
     if anchor_element:
         # Get the "href" attribute value
         href_value = base_url + await anchor_element.get_attribute('href')
-        print(f'Movie {index + 1} - Href Value:', href_value)
-        print()
+        print(f'Movie {index + 1} URL:', href_value)
+       
     else:
         print(f'Movie {index + 1} - No anchor elements found.')
-        print()
     
     return href_value
 
@@ -107,13 +137,8 @@ async def extract_movie_info(div_element, index):
 
     # Print the extracted data for this movie
     if name is not None:
-        print(f'Movie {index + 1} - Name:', name)
-    if genre is not None:
-        print(f'Movie {index + 1} - Genre:', genre)
-    if language is not None:
-        print(f'Movie {index + 1} - Language:', language)
-
-    # Return the extracted data as a tuple
+        print(f'Movie {index + 1} - Name:', name, f'- Genre:', genre,f'- Language:', language )
+    
     return name, genre, language
 
 async def get_show_details(context,url, index):
@@ -122,23 +147,36 @@ async def get_show_details(context,url, index):
    # Find the div elements of Show Details
     div_cinema_elements = await page.query_selector_all('div.MovieSessionsListingDesktop_movieSessions__YBUAu')
     print(f'Movie {index +1}:',url)
+    cinemas = []
     for index_cinema, div_element in enumerate(div_cinema_elements):
         # Find the first anchor (<a>) element within the current div
         anchor_element = await div_element.query_selector('a')
-
+        
         if anchor_element:
             # Get the "href" attribute value
             href_value = base_url + await anchor_element.get_attribute('href')
-            print(f'Movie{index +1} Cinema URL {index_cinema +1}:', href_value)
+            print(f'Movie {index +1} Cinema URL {index_cinema +1}:', href_value)
         else:
             print(f'Movie{index +1} Cinema URL {index_cinema +1}:', ' - No anchor elements found.')
 
         # Get the text content of the <a> element
-        text_content =await anchor_element.inner_html()
-        print(f'Movie{index +1} Cinema Name {index_cinema +1}:', text_content)
+        cinema_url =  base_url + await anchor_element.get_attribute('href')
+        cinema_name =await anchor_element.inner_html()
+        print(f'Movie {index +1} Cinema Name {index_cinema +1}:', cinema_name)
         print()
 
-    show_details :ShowDetails = None
+        #show times
+        showtime_elements = await div_element.query_selector_all("div.greenCol.MovieSessionsListingDesktop_time__HWpes")
+        print("Show Time Total :",len(showtime_elements))
+        show_times = []
+        for show_element in showtime_elements:
+           
+            show_time = await show_element.inner_text()
+            show_time = show_time.split("\n")[0]
+            show_times.append(show_time)
+            print("Show Time :",show_time)
+        cinemas.append(Cinema(cinema_name,cinema_url,showtimes=show_times))
+    show_details :ShowDetails = ShowDetails("27-09-2023",cinemas=cinemas)
     return show_details
 
       
@@ -202,7 +240,8 @@ async def scrape_website():
                 movie.showDetails = show_details
                 movie_list.append(movie)
 
-            await save_movie_list_json()
+            # await save_movie_list_json()
+            await save_movies_to_json()
             await browser.close()
 
         else:
