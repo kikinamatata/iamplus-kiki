@@ -2795,7 +2795,190 @@
         "url": "https://ticketnew.com/movies/are-you-ok-baby-movie-detail-166366",
         "showDetails": {
             "date": "2023-09-27",
-            "cinemas": []
+            "cinemas": [
+                {
+                    "name": "Udhayam Complex, Jafferkhanpet",
+                    "url": "https://ticketnew.com/movies/chennai/udhayam-complex-jafferkhanpet-c/3895",
+                    "showtimes": [
+                        "03:15 PM"
+                    ]
+                },
+                {
+                    "name": "PVR VR Mall, Anna Nagar",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-vr-mall-anna-nagar-c/5163",
+                    "showtimes": [
+                        "04:00 PM"
+                    ]
+                },
+                {
+                    "name": "M.R.Theatre 4K 3D A/C Dolby 7.1",
+                    "url": "https://ticketnew.com/movies/chennai/m-r-theatre-4k-3d-a-c-dolby-7-1-c/53959",
+                    "showtimes": [
+                        "12:00 PM",
+                        "06:45 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Chandra Metro Mall, Virugambakkam",
+                    "url": "https://ticketnew.com/movies/chennai/inox-chandra-metro-mall-virugambakkam-c/107",
+                    "showtimes": [
+                        "01:00 PM"
+                    ]
+                },
+                {
+                    "name": "INOX The Marina Mall OMR, Egatoor",
+                    "url": "https://ticketnew.com/movies/chennai/inox-the-marina-mall-omr-egatoor-c/7589",
+                    "showtimes": [
+                        "07:35 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Heritage RSL, ECR Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-heritage-rsl-ecr-chennai-c/7835",
+                    "showtimes": [
+                        "03:20 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas Villivakkam",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-villivakkam-c/10184",
+                    "showtimes": [
+                        "10:15 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas Maduravoyal",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-maduravoyal-c/10186",
+                    "showtimes": [
+                        "09:40 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Ampa Skywalk Mall, Aminjikarai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-ampa-skywalk-mall-aminjikarai-c/294",
+                    "showtimes": [
+                        "12:45 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Chennai Citi Centre, Dr. R. K. Salai",
+                    "url": "https://ticketnew.com/movies/chennai/inox-chennai-citi-centre-dr-r-k-salai-c/16",
+                    "showtimes": [
+                        "04:05 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas T. Nagar",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-t-nagar-c/10183",
+                    "showtimes": [
+                        "03:30 PM"
+                    ]
+                },
+                {
+                    "name": "Vela Cinemas 2K 3D, Thiruninravur",
+                    "url": "https://ticketnew.com/movies/chennai/vela-cinemas-2k-3d-thiruninravur-c/9399",
+                    "showtimes": [
+                        "11:30 AM",
+                        "02:30 PM",
+                        "06:30 PM",
+                        "09:30 PM"
+                    ]
+                },
+                {
+                    "name": "GopiKrishna Complex (Silver Screen), Ayanavaram",
+                    "url": "https://ticketnew.com/movies/chennai/gopikrishna-complex-silver-screen-ayanavaram-c/4416",
+                    "showtimes": [
+                        "12:00 PM",
+                        "03:30 PM",
+                        "07:15 PM",
+                        "10:55 PM"
+                    ]
+                },
+                {
+                    "name": "Velco Cinemas, Anakaputhur",
+                    "url": "https://ticketnew.com/movies/chennai/velco-cinemas-anakaputhur-c/3910",
+                    "showtimes": []
+                },
+                {
+                    "name": "SRK Cinemas A/C Dts Chengalpattu",
+                    "url": "https://ticketnew.com/movies/chennai/srk-cinemas-a-c-dts-chengalpattu-c/30149",
+                    "showtimes": [
+                        "11:30 AM",
+                        "06:30 PM"
+                    ]
+                },
+                {
+                    "name": "Cinepolis: BSR Mall, OMR, Thoraipakkam",
+                    "url": "https://ticketnew.com/movies/chennai/cinepolis-bsr-mall-omr-thoraipakkam-c/9505",
+                    "showtimes": [
+                        "01:40 PM",
+                        "07:10 PM"
+                    ]
+                },
+                {
+                    "name": "Sri Kumari Cinemas - Uthukottai",
+                    "url": "https://ticketnew.com/movies/chennai/sri-kumari-cinemas-uthukottai-c/3896",
+                    "showtimes": [
+                        "11:00 AM",
+                        "02:30 PM",
+                        "06:30 PM",
+                        "09:45 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Perambur - Spectrum Mall ",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-perambur-spectrum-mall-c/1007118",
+                    "showtimes": [
+                        "10:40 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Palazzo-The Nexus Vijaya Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-palazzo-the-nexus-vijaya-mall-c/1007117",
+                    "showtimes": [
+                        "07:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Escape-Express Avenue Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
+                    "showtimes": [
+                        "01:40 PM"
+                    ]
+                },
+                {
+                    "name": "Sree Lakshmi Cinemas A/C 2K Dolby Atmos",
+                    "url": "https://ticketnew.com/movies/chennai/sree-lakshmi-cinemas-a-c-2k-dolby-atmos-c/43338",
+                    "showtimes": [
+                        "11:30 AM",
+                        "02:30 PM",
+                        "06:30 PM",
+                        "09:30 PM"
+                    ]
+                },
+                {
+                    "name": "AVK Cinemas A/c 2K 3D- Mappedu",
+                    "url": "https://ticketnew.com/movies/chennai/avk-cinemas-a-c-2k-3d-mappedu-c/1011901",
+                    "showtimes": [
+                        "11:30 AM",
+                        "06:30 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Phoenix Market City, Velachery (formerly Jazz Cinemas)",
+                    "url": "https://ticketnew.com/movies/chennai/inox-phoenix-market-city-velachery-formerly-jazz-cinemas-c/51767",
+                    "showtimes": [
+                        "01:00 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Sathyam Royapettah",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-sathyam-royapettah-c/1007120",
+                    "showtimes": [
+                        "07:20 PM"
+                    ]
+                }
+            ]
         }
     },
     {
@@ -3051,7 +3234,103 @@
         "url": "https://ticketnew.com/movies/the-great-indian-family-movie-detail-165432",
         "showDetails": {
             "date": "2023-09-27",
-            "cinemas": []
+            "cinemas": [
+                {
+                    "name": "INOX Chandra Metro Mall, Virugambakkam",
+                    "url": "https://ticketnew.com/movies/chennai/inox-chandra-metro-mall-virugambakkam-c/107",
+                    "showtimes": [
+                        "10:20 PM"
+                    ]
+                },
+                {
+                    "name": "INOX The Marina Mall OMR, Egatoor",
+                    "url": "https://ticketnew.com/movies/chennai/inox-the-marina-mall-omr-egatoor-c/7589",
+                    "showtimes": [
+                        "07:10 PM",
+                        "10:00 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Heritage RSL, ECR Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-heritage-rsl-ecr-chennai-c/7835",
+                    "showtimes": [
+                        "02:00 PM",
+                        "04:40 PM",
+                        "07:35 PM",
+                        "10:15 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Ampa Skywalk Mall, Aminjikarai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-ampa-skywalk-mall-aminjikarai-c/294",
+                    "showtimes": [
+                        "12:40 PM",
+                        "06:35 PM",
+                        "09:15 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Chennai Citi Centre, Dr. R. K. Salai",
+                    "url": "https://ticketnew.com/movies/chennai/inox-chennai-citi-centre-dr-r-k-salai-c/16",
+                    "showtimes": [
+                        "07:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Grand Galada Mall, Pallavaram",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-grand-galada-mall-pallavaram-c/2879",
+                    "showtimes": [
+                        "12:40 PM",
+                        "07:30 PM"
+                    ]
+                },
+                {
+                    "name": "Cinepolis: BSR Mall, OMR, Thoraipakkam",
+                    "url": "https://ticketnew.com/movies/chennai/cinepolis-bsr-mall-omr-thoraipakkam-c/9505",
+                    "showtimes": [
+                        "07:10 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Perambur - Spectrum Mall ",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-perambur-spectrum-mall-c/1007118",
+                    "showtimes": [
+                        "07:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Escape-Express Avenue Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
+                    "showtimes": [
+                        "12:50 PM",
+                        "06:50 PM",
+                        "10:00 PM"
+                    ]
+                },
+                {
+                    "name": "PVR AEROHUB Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-aerohub-chennai-c/55990",
+                    "showtimes": [
+                        "04:30 PM",
+                        "10:15 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Phoenix Market City, Velachery (formerly Jazz Cinemas)",
+                    "url": "https://ticketnew.com/movies/chennai/inox-phoenix-market-city-velachery-formerly-jazz-cinemas-c/51767",
+                    "showtimes": [
+                        "06:55 PM",
+                        "09:45 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Sathyam Royapettah",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-sathyam-royapettah-c/1007120",
+                    "showtimes": [
+                        "07:40 PM"
+                    ]
+                }
+            ]
         }
     },
     {
@@ -3131,7 +3410,50 @@
         "url": "https://ticketnew.com/movies/a-haunting-in-venice-movie-detail-161284",
         "showDetails": {
             "date": "2023-09-27",
-            "cinemas": []
+            "cinemas": [
+                {
+                    "name": "PVR VR Mall, Anna Nagar",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-vr-mall-anna-nagar-c/5163",
+                    "showtimes": [
+                        "07:40 PM"
+                    ]
+                },
+                {
+                    "name": "INOX The Marina Mall OMR, Egatoor",
+                    "url": "https://ticketnew.com/movies/chennai/inox-the-marina-mall-omr-egatoor-c/7589",
+                    "showtimes": [
+                        "04:25 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Palazzo-The Nexus Vijaya Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-palazzo-the-nexus-vijaya-mall-c/1007117",
+                    "showtimes": [
+                        "04:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Escape-Express Avenue Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
+                    "showtimes": [
+                        "03:50 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Phoenix Market City, Velachery (formerly Jazz Cinemas)",
+                    "url": "https://ticketnew.com/movies/chennai/inox-phoenix-market-city-velachery-formerly-jazz-cinemas-c/51767",
+                    "showtimes": [
+                        "03:40 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Sathyam Royapettah",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-sathyam-royapettah-c/1007120",
+                    "showtimes": [
+                        "10:00 PM"
+                    ]
+                }
+            ]
         }
     },
     {
@@ -3255,7 +3577,36 @@
         "url": "https://ticketnew.com/movies/the-equalizer-3-movie-detail-154965",
         "showDetails": {
             "date": "2023-09-27",
-            "cinemas": []
+            "cinemas": [
+                {
+                    "name": "INOX The Marina Mall OMR, Egatoor",
+                    "url": "https://ticketnew.com/movies/chennai/inox-the-marina-mall-omr-egatoor-c/7589",
+                    "showtimes": [
+                        "10:15 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Palazzo-The Nexus Vijaya Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-palazzo-the-nexus-vijaya-mall-c/1007117",
+                    "showtimes": [
+                        "10:10 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Escape-Express Avenue Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
+                    "showtimes": [
+                        "04:20 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Phoenix Market City, Velachery (formerly Jazz Cinemas)",
+                    "url": "https://ticketnew.com/movies/chennai/inox-phoenix-market-city-velachery-formerly-jazz-cinemas-c/51767",
+                    "showtimes": [
+                        "10:45 PM"
+                    ]
+                }
+            ]
         }
     },
     {
@@ -3387,29 +3738,7 @@
         "url": "https://ticketnew.com/movies/rani-the-real-story-movie-detail-166506",
         "showDetails": {
             "date": "2023-09-27",
-            "cinemas": [
-                {
-                    "name": "PVR VR Mall, Anna Nagar",
-                    "url": "https://ticketnew.com/movies/chennai/pvr-vr-mall-anna-nagar-c/5163",
-                    "showtimes": [
-                        "04:25 PM"
-                    ]
-                },
-                {
-                    "name": "PVR Escape-Express Avenue Mall",
-                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
-                    "showtimes": [
-                        "10:45 PM"
-                    ]
-                },
-                {
-                    "name": "INOX Phoenix Market City, Velachery (formerly Jazz Cinemas)",
-                    "url": "https://ticketnew.com/movies/chennai/inox-phoenix-market-city-velachery-formerly-jazz-cinemas-c/51767",
-                    "showtimes": [
-                        "10:15 PM"
-                    ]
-                }
-            ]
+            "cinemas": []
         }
     },
     {
@@ -3476,22 +3805,7 @@
         "url": "https://ticketnew.com/movies/paramporul-movie-detail-164247",
         "showDetails": {
             "date": "2023-09-27",
-            "cinemas": [
-                {
-                    "name": "PVR VR Mall, Anna Nagar",
-                    "url": "https://ticketnew.com/movies/chennai/pvr-vr-mall-anna-nagar-c/5163",
-                    "showtimes": [
-                        "12:15 PM"
-                    ]
-                },
-                {
-                    "name": "PVR Escape-Express Avenue Mall",
-                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
-                    "showtimes": [
-                        "07:15 PM"
-                    ]
-                }
-            ]
+            "cinemas": []
         }
     },
     {
