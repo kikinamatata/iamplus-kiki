@@ -94,8 +94,15 @@ async def simple_serialized_movies():
 async def save_movies_to_json():
      # Save movie_list to a JSON file
     json_file = "movies.json"
-    # serialized_movies =  [serialize_movie_and_showdetails(movie) for movie in movie_list]
-    serialized_movies = await simple_serialized_movies()
+    serialized_movies = []
+    save_full_movies = True
+    if save_full_movies :
+       json_file = "movies_full.json"
+    
+       serialized_movies =  [serialize_movie_and_showdetails(movie) for movie in movie_list]
+    else:
+        serialized_movies = await simple_serialized_movies()
+    
     with open(json_file, 'w') as json_file:
         json.dump(serialized_movies, json_file, indent=4)   
 
@@ -229,29 +236,7 @@ async def scrape_website():
                             language=language,
                             url=href_value
                             )
-                # #Show Details
-                # page = await context.new_page()
-                # await page.goto(href_value)
-                #  # Find the div elements of Show Details
-                # div_cinema_elements = await page.query_selector_all('div.MovieSessionsListingDesktop_movieSessions__YBUAu')
-
-                # for div_element in div_cinema_elements:
-                #     # Find the first anchor (<a>) element within the current div
-                #     anchor_element = await div_element.query_selector('a')
-
-                #     if anchor_element:
-                #         # Get the "href" attribute value
-                #         href_value = base_url + await anchor_element.get_attribute('href')
-                #         print(f'>>>>>Movie 1 - Href Value:', href_value)
-                #         print()
-                #     else:
-                #         print(f'Movie 1 - No anchor elements found.')
-                #         print()
-
-                #     # Get the text content of the <a> element
-                #     text_content =await anchor_element.inner_html()
-                #     print("Text Content:", text_content)
-
+                
                 show_details = None
                 show_details = await get_show_details(context=context,url=href_value,index=index)
                 movie.showDetails = show_details
