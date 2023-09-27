@@ -3,6 +3,8 @@ from playwright.async_api import async_playwright
 import json
 import csv
 from typing import List
+import datetime
+
 
 class Cinema:
     def __init__(self, name:str,url:str, showtimes:List[str]):
@@ -176,7 +178,11 @@ async def get_show_details(context,url, index):
             show_times.append(show_time)
             print("Show Time :",show_time)
         cinemas.append(Cinema(cinema_name,cinema_url,showtimes=show_times))
-    show_details :ShowDetails = ShowDetails("27-09-2023",cinemas=cinemas)
+                
+    # Get today's date
+    today_date = datetime.date.today()
+    date_string = today_date.strftime("%Y-%m-%d")
+    show_details :ShowDetails = ShowDetails(date_string,cinemas=cinemas)
     return show_details
 
       

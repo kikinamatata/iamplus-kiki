@@ -19,4 +19,10 @@
         }
     }
 }
+
+
+{"@context":"http://schema.org/",
+"@type":"Event","name":"Iraivan",
+"url":"https://paytm.com/movies/chennai/sangam-cinemas-4k-rgb-laser-dolby-atmos-kilpauk-c/4143",
+"startDate":"2023-09-28","location":{"@type":"Place","name":"Sangam Cinemas 4K RGB Laser Dolby Atmos, Kilpauk","address":{"streetAddress":"870, Poonamalle High Road, Kilpauk, Chennai, Tamil Nadu 600010, India"}}}
 //"New ReleaseIraivanATamilBook Ticket"
