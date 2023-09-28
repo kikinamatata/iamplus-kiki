@@ -30,14 +30,16 @@ class Movie:
         json_array = []
         date = self.showDetails.date
         for cinema in self.showDetails.cinemas:
-            for showtime in cinema.showtimes:
-                json_node = {
+            json_node = {
                     "MovieTitle": self.name,
                     "Theatre": cinema.name,
-                    "MovieDate": date,
-                    "ShowTime": showtime
+                    "MovieDate": date    
                 }
-                json_array.append(json_node)
+            showtime_all = ""
+            for showtime in cinema.showtimes:
+                showtime_all += showtime+" "
+            json_node["ShowTime"] = showtime_all
+            json_array.append(json_node)
         return json_array    
 
 # Function to serialize Movie and ShowDetails instances to JSON
@@ -163,7 +165,8 @@ async def extract_movie_info(div_element, index):
 
 async def get_show_details(context,url, index):
     page = await context.new_page()
-    await page.goto(url)
+    await page.goto(url,timeout=0)
+    #await page.wait_for_selector("div")
    # Find the div elements of Show Details
     div_cinema_elements = await page.query_selector_all('div.MovieSessionsListingDesktop_movieSessions__YBUAu')
     print(f'Movie {index +1}:',url)
@@ -203,55 +206,54 @@ async def get_show_details(context,url, index):
     show_details :ShowDetails = ShowDetails(date_string,cinemas=cinemas)
     return show_details
 
+async def set_movie_list(context,url):
+    page = await context.new_page()
+    await page.goto(url, timeout=0)
+    #await page.wait_for_selector("div")
+
+    # Find the div element with class name "mymovie"
+    div_movie_elements = await page.query_selector_all('div.DesktopRunningMovie_movieCard__SDJqf')
+
+    # Check if any div elements with class name "mymovie" were found
+    if div_movie_elements:
+        print(f'Found {len(div_movie_elements)} div elements with class name "DesktopRunningMovie_movieCard__SDJqf".')
+        # You can loop through the elements and interact with them or extract data
+        for index, div_element in enumerate(div_movie_elements):
+
+            href_value =await get_movie_url(div_element=div_element,base_url=base_url,index=index)
+            name, genre, language = await extract_movie_info(div_element=div_element,index=index)
+            movie = Movie(
+                        name=name,
+                        genre=genre,
+                        language=language,
+                        url=href_value
+                        )
+            
+            show_details = None
+            show_details = await get_show_details(context=context,url=href_value,index=index)
+            movie.showDetails = show_details
+            movie_list.append(movie)
+            # if index == 1:
+            #    break
+
+
+    else:
+        print('No div elements with class name "DesktopRunningMovie_movieCard__SDJqf" were found.')
+
       
 
 async def scrape_website():
     async with async_playwright() as p:
         # Launch a Chromium browser instance
         browser = await p.chromium.launch()
-
         # Create a new browser context
         context = await browser.new_context()
-
-        # Create a page in the context
-        page = await context.new_page()
-
-        # Navigate to the URL you want to scrape
-        await page.goto('https://ticketnew.com/movies/chennai')
-
-        # Find the div element with class name "mymovie"
-        div_movie_elements = await page.query_selector_all('div.DesktopRunningMovie_movieCard__SDJqf')
-
-        # Check if any div elements with class name "mymovie" were found
-        if div_movie_elements:
-            print(f'Found {len(div_movie_elements)} div elements with class name "DesktopRunningMovie_movieCard__SDJqf".')
-            # You can loop through the elements and interact with them or extract data
-            for index, div_element in enumerate(div_movie_elements):
-
-                href_value =await get_movie_url(div_element=div_element,base_url=base_url,index=index)
-                name, genre, language = await extract_movie_info(div_element=div_element,index=index)
-                movie = Movie(
-                            name=name,
-                            genre=genre,
-                            language=language,
-                            url=href_value
-                            )
-                
-                show_details = None
-                show_details = await get_show_details(context=context,url=href_value,index=index)
-                movie.showDetails = show_details
-                movie_list.append(movie)
-                # if index == 1:
-                #    break
-
-            await save_movies_to_json()
-            await browser.close()
-
-        else:
-            print('No div elements with class name "DesktopRunningMovie_movieCard__SDJqf" were found.')
-
+        url = 'https://ticketnew.com/movies/chennai'
+        await set_movie_list(context, url)
+        await save_movies_to_json()
+        
         # Close the browser
-       
+        await browser.close()
 
 # Run the asynchronous scraping function
 if __name__ == "__main__":
