@@ -1,0 +1,138 @@
+[
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    },
+    {
+        "price": "$1,437",
+        "city1_code": "lax",
+        "city2_code": "sin",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        },
+        "return": {
+            "airlines": "United",
+            "start_time": "6:00 AM",
+            "end_time": "6:45 PM"
+        }
+    }
+]
