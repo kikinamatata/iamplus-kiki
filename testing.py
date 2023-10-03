@@ -23,8 +23,8 @@ async def scrape_website():
         await page.set_extra_http_headers(custom_headers)
         # Navigate to the URL you want to scrape
         # await page.goto('https://www.fandango.com/')
-        # await page.goto('https://www.kayak.com/flights/SIN-MAA/2023-10-28/2023-11-04?fs=fdDir=true;stops=~0&sort=bestflight_a', timeout=0)
-        await page.goto('https://www.skyscanner.com/transport/flights/sins/trz/231011/231019/?adultsv2=1&cabinclass=economy&childrenv2=&inboundaltsenabled=false&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1', timeout=0)
+        await page.goto('https://www.kayak.com/flights/SIN-MAA/2023-10-28/2023-11-04?fs=fdDir=true;stops=~0&sort=bestflight_a', timeout=0)
+        # await page.goto('https://www.skyscanner.com/transport/flights/sins/trz/231011/231019/?adultsv2=1&cabinclass=economy&childrenv2=&inboundaltsenabled=false&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1', timeout=0)
         # Get the HTML content of the page
         html_content = await page.content()
         print(html_content)

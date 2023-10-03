@@ -1,0 +1,65 @@
+[
+    {
+        "price": "$2,403",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    },
+    {
+        "price": "$2,391",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    },
+    {
+        "price": "$2,456",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    },
+    {
+        "price": "$2,865",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    },
+    {
+        "price": "$2,950",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    },
+    {
+        "price": "$3,045",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    },
+    {
+        "price": "$3,427",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "2023-10-14",
+        "return_date": "2023-10-20"
+    }
+]
