@@ -1,6 +1,6 @@
 [
     {
-        "price": "$937",
+        "price": "$2,378",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -8,18 +8,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "5:30 PM",
-            "end_time": "6:45 PM"
+            "airlines": "Singapore Airlines",
+            "start_time": "11:40 PM",
+            "end_time": "7:50 AM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "9:00 PM",
-            "end_time": "12:18 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "8:45 PM",
+            "end_time": "9:40 PM"
         }
     },
     {
-        "price": "$937",
+        "price": "$2,456",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -27,18 +27,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "5:30 PM",
-            "end_time": "6:45 PM"
+            "airlines": "Singapore Airlines",
+            "start_time": "11:40 PM",
+            "end_time": "7:50 AM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "8:45 AM",
-            "end_time": "12:05 PM"
+            "airlines": "Singapore Airlines",
+            "start_time": "6:40 PM",
+            "end_time": "7:35 PM"
         }
     },
     {
-        "price": "$937",
+        "price": "$3,548",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -46,18 +46,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "5:30 PM",
-            "end_time": "6:45 PM"
+            "airlines": "Singapore Airlines",
+            "start_time": "11:40 PM",
+            "end_time": "7:50 AM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "8:45 AM",
-            "end_time": "5:50 PM"
+            "airlines": "Japan Airlines",
+            "start_time": "8:00 AM",
+            "end_time": "11:00 AM"
         }
     },
     {
-        "price": "$937",
+        "price": "$1,772",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -65,18 +65,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "5:30 PM",
-            "end_time": "6:45 PM"
+            "airlines": "Philippine Airlines",
+            "start_time": "12:50 PM",
+            "end_time": "11:10 PM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "9:00 PM",
-            "end_time": "7:16 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "6:40 PM",
+            "end_time": "7:35 PM"
         }
     },
     {
-        "price": "$938",
+        "price": "$1,789",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -84,18 +84,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "10:35 PM",
-            "end_time": "6:15 AM"
+            "airlines": "Philippine Airlines",
+            "start_time": "12:50 PM",
+            "end_time": "11:10 PM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "9:00 PM",
-            "end_time": "12:18 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "8:45 PM",
+            "end_time": "9:40 PM"
         }
     },
     {
-        "price": "$938",
+        "price": "$3,250",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -103,18 +103,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "10:35 PM",
-            "end_time": "6:15 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "11:40 PM",
+            "end_time": "7:50 AM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "8:45 AM",
-            "end_time": "12:05 PM"
+            "airlines": "EVA Air",
+            "start_time": "1:10 PM",
+            "end_time": "4:20 PM"
         }
     },
     {
-        "price": "$943",
+        "price": "$2,744",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -122,18 +122,18 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "10:35 PM",
-            "end_time": "6:15 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "11:40 PM",
+            "end_time": "7:50 AM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "8:45 AM",
-            "end_time": "5:50 PM"
+            "airlines": "Singapore Airlines",
+            "start_time": "9:25 AM",
+            "end_time": "12:50 PM"
         }
     },
     {
-        "price": "$943",
+        "price": "$2,701",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -141,14 +141,14 @@
         "travel_date": "231014",
         "return_date": "231020",
         "travel": {
-            "airlines": "United",
-            "start_time": "10:35 PM",
-            "end_time": "6:15 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "8:20 AM",
+            "end_time": "7:10 PM"
         },
         "return": {
-            "airlines": "United",
-            "start_time": "9:00 PM",
-            "end_time": "7:16 AM"
+            "airlines": "Singapore Airlines",
+            "start_time": "8:45 PM",
+            "end_time": "9:40 PM"
         }
     }
 ]

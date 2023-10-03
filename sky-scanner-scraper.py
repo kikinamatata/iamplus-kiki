@@ -4,6 +4,7 @@ import json
 import csv
 from typing import List
 import datetime
+import re
 
 
 
@@ -60,6 +61,9 @@ class Itinerary:
        
 
 itinerary_list:List[Itinerary] = []
+
+# Save movie_list to a JSON file
+json_file = "sky-scanner.json"
 
 async def my_print(element,name):
           text = await element.inner_html()
@@ -122,9 +126,9 @@ async def getTrip(trip_element) -> AirlinesTime:
       
       
 # Function to save  instances to a JSON file
-async def save_itinerary_to_json():
-     # Save movie_list to a JSON file
-    json_file = "sky-scanner.json"
+async def save_itinerary_to_json(file_prefix = 'Best'):
+    file_prefix = file_prefix.lower()
+    json_file = 'sky-scanner-'+file_prefix+'.json'
     serialized_list = []
     for item in itinerary_list:
         serialized_list.append(item.to_json())
@@ -134,7 +138,7 @@ async def save_itinerary_to_json():
 
  #write a code for         
 
-async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_date,city1_name,city2_name):
+async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_date,city1_name,city2_name,sort_by='Best'):
     async with async_playwright() as p:
         # Launch a Chromium browser instance
         browser = await p.chromium.launch(headless=False)
@@ -151,6 +155,7 @@ async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_dat
         # Navigate to the URL you want to scrape
         await page.goto(url)
         # await page.goto('https://www.kayak.com/flights/MAA-SIN/2023-10-29/2023-11-05?fs=fdDir=true;stops=~0&sort=bestflight_a')
+        await page.get_by_role("button", name=re.compile(sort_by, re.IGNORECASE)).click()
        
         trip_element_list = await page.query_selector_all('div.FlightsTicket_container__NWJkY')
         for index,trip_element in enumerate(trip_element_list):
@@ -187,7 +192,9 @@ async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_dat
 
             itinerary_list.append(itinerary)
         
-        await save_itinerary_to_json()
+        await save_itinerary_to_json(sort_by)
+        
+        await page.content()
         await browser.close()
 
     
@@ -203,4 +210,7 @@ if __name__ == "__main__":
     return_date = '231020'
     city1_name = airports_dict[city1.upper()]
     city2_name = airports_dict[city2.upper()]
-    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name))
+    sort_by_best ='Best'
+    sort_by_cheapest ='Cheapest'
+    sort_by_fastest ='Fastest'
+    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_fastest))
