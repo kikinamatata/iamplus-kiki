@@ -38,7 +38,7 @@
         }
     },
     {
-        "price": "$2,865",
+        "price": "$2,864",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -57,7 +57,7 @@
         }
     },
     {
-        "price": "$2,950",
+        "price": "$2,949",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -95,7 +95,7 @@
         }
     },
     {
-        "price": "$3,427",
+        "price": "$3,426",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",

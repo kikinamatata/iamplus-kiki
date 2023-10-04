@@ -95,11 +95,11 @@ async def simple_serialized_movies():
  # Function to save Movie instances to a JSON file
 async def save_movies_to_json():
      # Save movie_list to a JSON file
-    json_file = "movies.json"
+    json_file = "ticket-new-movies.json"
     serialized_movies = []
-    save_full_movies = False
+    save_full_movies = True
     if save_full_movies :
-       json_file = "movies_full.json"
+       json_file = "ticket-new-movies_full.json"
     
        serialized_movies =  [serialize_movie_and_showdetails(movie) for movie in movie_list]
     else:

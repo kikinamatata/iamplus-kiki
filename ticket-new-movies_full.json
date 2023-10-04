@@ -1,0 +1,524 @@
+[
+    {
+        "name": "800 The Movie",
+        "genre": "sport, drama, biography",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/800-the-movie-movie-detail-161602",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": [
+                {
+                    "name": "Devi Cineplex, Anna Salai",
+                    "url": "https://ticketnew.com/movies/chennai/devi-cineplex-anna-salai-c/4184",
+                    "showtimes": [
+                        "01:00 PM"
+                    ]
+                },
+                {
+                    "name": "Woodlands Complex - Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/woodlands-complex-chennai-c/1010362",
+                    "showtimes": [
+                        "10:00 PM"
+                    ]
+                },
+                {
+                    "name": "PVR VR Mall, Anna Nagar",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-vr-mall-anna-nagar-c/5163",
+                    "showtimes": [
+                        "03:35 PM",
+                        "10:05 PM"
+                    ]
+                },
+                {
+                    "name": "INOX The Marina Mall OMR, Egatoor",
+                    "url": "https://ticketnew.com/movies/chennai/inox-the-marina-mall-omr-egatoor-c/7589",
+                    "showtimes": [
+                        "03:35 PM",
+                        "10:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Heritage RSL, ECR Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-heritage-rsl-ecr-chennai-c/7835",
+                    "showtimes": [
+                        "12:15 PM",
+                        "07:15 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas Villivakkam",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-villivakkam-c/10184",
+                    "showtimes": [
+                        "12:10 PM",
+                        "06:55 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas Maduravoyal",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-maduravoyal-c/10186",
+                    "showtimes": [
+                        "03:50 PM",
+                        "10:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Ampa Skywalk Mall, Aminjikarai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-ampa-skywalk-mall-aminjikarai-c/294",
+                    "showtimes": [
+                        "12:45 PM",
+                        "07:15 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Grand Mall, Velachery",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-grand-mall-velachery-c/300",
+                    "showtimes": [
+                        "11:55 AM",
+                        "06:55 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas OMR Navlur",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-omr-navlur-c/10185",
+                    "showtimes": [
+                        "12:40 PM"
+                    ]
+                },
+                {
+                    "name": "AGS Cinemas T. Nagar",
+                    "url": "https://ticketnew.com/movies/chennai/ags-cinemas-t-nagar-c/10183",
+                    "showtimes": [
+                        "12:25 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Grand Galada Mall, Pallavaram",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-grand-galada-mall-pallavaram-c/2879",
+                    "showtimes": [
+                        "03:15 PM",
+                        "10:20 PM"
+                    ]
+                },
+                {
+                    "name": "PVR SKLS Galaxy Mall, Red Hills Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-skls-galaxy-mall-red-hills-chennai-c/4941",
+                    "showtimes": [
+                        "04:20 PM",
+                        "10:20 PM"
+                    ]
+                },
+                {
+                    "name": "SRK Cinemas A/C Dts Chengalpattu",
+                    "url": "https://ticketnew.com/movies/chennai/srk-cinemas-a-c-dts-chengalpattu-c/30149",
+                    "showtimes": [
+                        "02:25 PM",
+                        "09:30 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Theyagaraja ,Thiruvanmiyur, Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-theyagaraja-thiruvanmiyur-chennai-c/1007119",
+                    "showtimes": []
+                },
+                {
+                    "name": "PVR Perambur - Spectrum Mall ",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-perambur-spectrum-mall-c/1007118",
+                    "showtimes": [
+                        "12:15 PM",
+                        "07:05 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Palazzo-The Nexus Vijaya Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-palazzo-the-nexus-vijaya-mall-c/1007117",
+                    "showtimes": [
+                        "03:55 PM",
+                        "10:45 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Escape-Express Avenue Mall",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-escape-express-avenue-mall-c/1007116",
+                    "showtimes": [
+                        "01:35 PM",
+                        "10:05 PM"
+                    ]
+                },
+                {
+                    "name": "PVR AEROHUB Chennai",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-aerohub-chennai-c/55990",
+                    "showtimes": [
+                        "12:30 PM",
+                        "07:30 PM"
+                    ]
+                },
+                {
+                    "name": "INOX Phoenix Market City, Velachery (formerly Jazz Cinemas)",
+                    "url": "https://ticketnew.com/movies/chennai/inox-phoenix-market-city-velachery-formerly-jazz-cinemas-c/51767",
+                    "showtimes": [
+                        "11:15 AM",
+                        "07:15 PM"
+                    ]
+                },
+                {
+                    "name": "PVR Sathyam Royapettah",
+                    "url": "https://ticketnew.com/movies/chennai/pvr-sathyam-royapettah-c/1007120",
+                    "showtimes": [
+                        "12:50 PM",
+                        "07:15 PM"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "The Road",
+        "genre": "drama, thriller",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/the-road-movie-detail-162548",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Chithha",
+        "genre": "drama, thriller",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/chithha-movie-detail-166012",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Chandramukhi 2",
+        "genre": "horror, comedy",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/chandramukhi-2-movie-detail-155066",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Irugapatru",
+        "genre": "drama, romance",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/irugapatru-movie-detail-166789",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Raththam",
+        "genre": "action, drama, thriller",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/raththam-movie-detail-166865",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Iraivan",
+        "genre": "drama",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/iraivan-movie-detail-159464",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Mark Antony",
+        "genre": "drama",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/mark-antony-movie-detail-160821",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Shot Boot Three",
+        "genre": "adventure, family, comedy",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/shot-boot-three-movie-detail-166018",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Kannur Squad",
+        "genre": "action, drama, crime",
+        "language": "Malayalam",
+        "url": "https://ticketnew.com/movies/kannur-squad-movie-detail-160587",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Chaaver",
+        "genre": "crime",
+        "language": "Malayalam",
+        "url": "https://ticketnew.com/movies/chaaver-movie-detail-166033",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Fukrey 3",
+        "genre": "thriller, crime, comedy",
+        "language": "Hindi",
+        "url": "https://ticketnew.com/movies/fukrey-3-movie-detail-159565",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Jawan",
+        "genre": "action, thriller",
+        "language": "Tamil, Hindi",
+        "url": "https://ticketnew.com/movies/jawan-movie-detail-154449",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "The Exorcist: Believer",
+        "genre": "horror, thriller",
+        "language": "Tamil, English",
+        "url": "https://ticketnew.com/movies/the-exorcist-believer-movie-detail-162817",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "The Creator",
+        "genre": "thriller, fantasy",
+        "language": "English",
+        "url": "https://ticketnew.com/movies/the-creator-movie-detail-162889",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Mission Raniganj: The Great Bharat Rescue",
+        "genre": "drama, thriller, historical",
+        "language": "Hindi",
+        "url": "https://ticketnew.com/movies/mission-raniganj-the-great-bharat-rescue-movie-detail-166073",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Skanda",
+        "genre": "action, drama",
+        "language": "Telugu, Tamil",
+        "url": "https://ticketnew.com/movies/skanda-movie-detail-161222",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Dono",
+        "genre": "drama, romance",
+        "language": "Hindi",
+        "url": "https://ticketnew.com/movies/dono-movie-detail-164450",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "The Nun II",
+        "genre": "horror, thriller, mystery",
+        "language": "Tamil, English",
+        "url": "https://ticketnew.com/movies/the-nun-ii-movie-detail-156843",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Kushi",
+        "genre": "drama, romance, comedy",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/kushi-movie-detail-154164",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Saw X",
+        "genre": "action",
+        "language": "English",
+        "url": "https://ticketnew.com/movies/saw-x-movie-detail-161578",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Enaku Endey Kidaiyaathu",
+        "genre": "thriller, mystery",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/enaku-endey-kidaiyaathu-movie-detail-166700",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "The Vaccine War",
+        "genre": "drama",
+        "language": "Hindi",
+        "url": "https://ticketnew.com/movies/the-vaccine-war-movie-detail-157969",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Indha Crime Thappilla",
+        "genre": "drama",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/indha-crime-thappilla-movie-detail-167094",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Jailer",
+        "genre": "action, thriller",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/jailer-movie-detail-154651",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Rules Ranjann",
+        "genre": "drama, romance, comedy",
+        "language": "Telugu",
+        "url": "https://ticketnew.com/movies/rules-ranjann-movie-detail-166867",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Oppenheimer",
+        "genre": "drama",
+        "language": "English",
+        "url": "https://ticketnew.com/movies/oppenheimer-movie-detail-155321",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Vinnaithaandi Varuvaayaa",
+        "genre": "drama, romance",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/vinnaithaandi-varuvaayaa-movie-detail-151933",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Thank You For Coming",
+        "genre": "drama, comedy",
+        "language": "Hindi",
+        "url": "https://ticketnew.com/movies/thank-you-for-coming-movie-detail-165065",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Sukhee",
+        "genre": "drama",
+        "language": "Hindi",
+        "url": "https://ticketnew.com/movies/sukhee-movie-detail-152965",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "MAD",
+        "genre": "action, drama",
+        "language": "Telugu",
+        "url": "https://ticketnew.com/movies/mad-movie-detail-166868",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "A Haunting In Venice",
+        "genre": "horror, crime",
+        "language": "English",
+        "url": "https://ticketnew.com/movies/a-haunting-in-venice-movie-detail-161284",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Miss Shetty Mr Polishetty",
+        "genre": "romance, comedy",
+        "language": "Telugu, Tamil",
+        "url": "https://ticketnew.com/movies/miss-shetty-mr-polishetty-movie-detail-160591",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Leo Trailer Celebration",
+        "genre": "action, thriller",
+        "language": "Tamil",
+        "url": "https://ticketnew.com/movies/leo-trailer-celebration-movie-detail-167020",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Peddha Kapu: Part 1",
+        "genre": "action, drama, political",
+        "language": "Telugu",
+        "url": "https://ticketnew.com/movies/peddha-kapu-part-1-movie-detail-166646",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    },
+    {
+        "name": "Expend4bles",
+        "genre": "action, thriller",
+        "language": "English",
+        "url": "https://ticketnew.com/movies/expend4bles-movie-detail-157199",
+        "showDetails": {
+            "date": "10-04-2023",
+            "cinemas": []
+        }
+    }
+]

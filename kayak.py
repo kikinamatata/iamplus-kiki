@@ -5,6 +5,7 @@ import csv
 from typing import List
 import datetime
 import re
+import os
 
 
 
@@ -116,12 +117,18 @@ async def getTrip(trip_element) -> AirlinesTime:
 # Function to save  instances to a JSON file
 async def save_itinerary_to_json(file_prefix = 'Best'):
     file_prefix = file_prefix.lower()
-    json_file = 'kayak-'+file_prefix+'.json'
+    # Define the folder path
+    folder_path = "kayak"
+    # Check if the folder exists, and if not, create it
+    if not os.path.exists(folder_path):
+     os.makedirs(folder_path)
+    # Define the file path
+    file_path = os.path.join(folder_path, folder_path +'-' + file_prefix+'.json')
     serialized_list = []
     for item in itinerary_list:
         serialized_list.append(item.to_json())
         # break
-    with open(json_file, 'w') as json_file:
+    with open(file_path, 'w') as json_file:
         json.dump(serialized_list, json_file, indent=4)      
 
  #write a code for         
@@ -136,7 +143,6 @@ async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_dat
         c2 = city2_code
         t1 = travel_date
         r1 = return_date
-        url = 'https://www.skyscanner.com/transport/flights/'+ c1 +'/' + c2 +'/'+ t1+'/'+r1+'/?''adultsv2=1&cabinclass=economy&childrenv2=&inboundaltsenabled=false&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=1'
         url = 'https://www.kayak.com/flights/'+ c1 +'-'+ c2 +'/'+ t1 + '/' + r1 + '?fs=fdDir=true;stops=~0&sort=' + sort_by
         print(url)
       
@@ -161,19 +167,17 @@ async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_dat
             # trip_start_element = await trip_element.query_selector_all('div.nrc6')
             # <div class="c3J0r" bis_skin_checked="1"><div class="c3J0r-container" bis_skin_checked="1"><div class="aVdy-select-leg" bis_skin_checked="1"><div class="aVdy-select-leg-checkbox" bis_skin_checked="1"><span class="PVIO PVIO-mod-theme-default PVIO-mod-size-base "><span class="PVIO-input-wrapper"><input tabindex="0" aria-disabled="false" aria-checked="false" class="PVIO-input" type="checkbox" aria-label="" value="false"><svg viewBox="0 0 200 200" width="1.25em" height="1.25em" xmlns="http://www.w3.org/2000/svg" class="icon" role="img" aria-hidden="true"><path d="M132.639 63.231l-48.974 53.26l-17.569-13.51l-12.191 15.855c22.199 17.07 30.128 26.802 38.284 17.932l55.172-60l-14.722-13.537z"></path></svg></span></span></div></div><div class="tdCx-mod-spaced tdCx-mod-stacked" bis_skin_checked="1"><div class="tdCx-leg-carrier" bis_skin_checked="1"><div class="c5iUd c5iUd-mod-variant-medium" bis_skin_checked="1"><div class="c5iUd-leg-carrier" bis_skin_checked="1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/SQ.png?crop=false&amp;width=108&amp;height=92&amp;fallback=default3.png&amp;_v=0ff33e55a8f21c7c3192f0394e8dfdb2" alt="Singapore Airlines"></div></div></div></div><div class="VY2U" bis_skin_checked="1"><div class="vmXl vmXl-mod-variant-large" bis_skin_checked="1"><span>8:45 pm</span><span class="aOlM"> – </span><span>9:40 pm</span></div><div class="c_cgF c_cgF-mod-variant-default" dir="auto" bis_skin_checked="1">Singapore Airlines</div></div><div class="JWEO" bis_skin_checked="1"><div class="vmXl vmXl-mod-variant-default" bis_skin_checked="1"><span class="JWEO-stops-text">nonstop</span></div><div class="c_cgF c_cgF-mod-variant-default" bis_skin_checked="1"></div></div><div class="xdW8" bis_skin_checked="1"><div class="vmXl vmXl-mod-variant-default" bis_skin_checked="1">15h 55m</div><div class="c_cgF c_cgF-mod-variant-default" bis_skin_checked="1"><div class="EFvI" bis_skin_checked="1"><div class="c_cgF c_cgF-mod-variant-default" title="Singapore Changi" bis_skin_checked="1"><span class="EFvI-ap-info" dir="auto"><span>SIN</span></span></div><span class="aOlM">-</span><div class="c_cgF c_cgF-mod-variant-default" title="Los Angeles" bis_skin_checked="1"><span class="EFvI-ap-info" dir="auto"><span>LAX</span></span></div></div></div></div></div></div>
             trips = await trip_element.query_selector_all("div.c3J0r")
-            for index, trip in enumerate(trips):
-                print (index , await trip.text_content())
-                # print(index,trip)
-                print("Flight ",index)
-                travel_details = await getTrip(trips[0]) 
-                itinerary.travel_airlines = travel_details.airlines_name
-                itinerary.travel_start_time = travel_details.start_time
-                itinerary.travel_end_time = travel_details.end_time
-                #Return Details
-                return_details = await getTrip(trips[1]) 
-                itinerary.return_airlines = return_details.airlines_name
-                itinerary.return_start_time = return_details.start_time
-                itinerary.return_end_time = return_details.end_time
+           
+            print("Flight ",index)
+            travel_details = await getTrip(trips[0]) 
+            itinerary.travel_airlines = travel_details.airlines_name
+            itinerary.travel_start_time = travel_details.start_time
+            itinerary.travel_end_time = travel_details.end_time
+            #Return Details
+            return_details = await getTrip(trips[1]) 
+            itinerary.return_airlines = return_details.airlines_name
+            itinerary.return_start_time = return_details.start_time
+            itinerary.return_end_time = return_details.end_time
 
             itinerary_list.append(itinerary)
         
@@ -198,4 +202,4 @@ if __name__ == "__main__":
     sort_by_best ='bestflight_a'
     sort_by_cheapest ='price_a'
     sort_by_fastest ='duration_a'
-    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_fastest))
+    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_cheapest))
