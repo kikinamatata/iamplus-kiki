@@ -81,7 +81,7 @@ async def my_print(element,name):
 # Function to save  instances to a JSON file
 async def save_itinerary_to_json(file_prefix = 'Best'):
     file_prefix = file_prefix.lower()
-    json_file = 'kayak-'+file_prefix+'.json'
+    json_file = 'booking-'+file_prefix+'.json'
     serialized_list = []
     for item in itinerary_list:
         serialized_list.append(item.to_json())
@@ -91,20 +91,13 @@ async def save_itinerary_to_json(file_prefix = 'Best'):
 
 
             
-async def getTrip(trip_element) -> AirlinesTime:
+async def getTrip(trip_element):
+    
     # <div class="css-13ekbfz"><div class="css-1rgw82s"><div class="css-k456he"><div class="css-3gojea"><div class="css-3gojea" style="grid-area: row1 / col1 / span 2 / span 2; background-image: url(&quot;https://r-xx.bstatic.com/data/airlines_logo/SQ.png&quot;);"></div></div></div></div><div class="css-1oe9l2q"><div class="css-1niqckn"><div class="css-io4ta2"><div class="css-1yl6p1k" style="text-align: left;"><div data-testid="flight_card_segment_departure_time_0" class="Text-module__root--variant-strong_1___SNYxf">23:40</div><div class="css-5nu86q"><div data-testid="flight_card_segment_departure_airport_0" class="Text-module__root--variant-small_1___+fbYj">LAX</div><div class="Text-module__root--variant-small_1___+fbYj css-1n4sh5k"> . </div><div data-testid="flight_card_segment_departure_date_0" class="Text-module__root--variant-small_1___+fbYj">14 Oct</div></div></div><div class="css-1wnqz2m" style="width: 50%;"><div data-testid="flight_card_segment_duration_0" aria-hidden="true" class="Text-module__root--variant-small_1___+fbYj css-ylq2vz">17h 10m</div><div class="HiddenVisually-module__root___CwnlX">17 hours 10 minutes</div><div class="css-1myv4yh" style="width: 100%; position: relative;"><hr class="Divider-module__root___PSOwi Divider-module__root--vertical-false___zS2cP css-5xx381"></div><div data-testid="flight_card_segment_stops_0" class="Text-module__root--variant-small_1___+fbYj css-ylq2vz">Direct</div></div><div class="css-1yl6p1k" style="text-align: right;"><div data-testid="flight_card_segment_destination_time_0" class="Text-module__root--variant-strong_1___SNYxf">07:50</div><div class="css-yyi517"><div data-testid="flight_card_segment_destination_airport_0" class="Text-module__root--variant-small_1___+fbYj">SIN</div><div class="Text-module__root--variant-small_1___+fbYj css-1n4sh5k"> . </div><div data-testid="flight_card_segment_destination_date_0" class="Text-module__root--variant-small_1___+fbYj">16 Oct</div></div></div></div></div></div></div>
-
-    # Name of Airlines
-    # <div class="css-1dimx8f"><div class="css-17m9lv6" style="flex-wrap: wrap;"><div class="css-17m9lv6" style="flex-wrap: wrap;"><div data-testid="flight_card_carrier_0" class="Text-module__root--variant-small_1___+fbYj">Singapore Airlines</div></div></div></div>
-    img_div_element = await trip_element.query_selector("div.css-1dimx8f")
-    airlines = await img_div_element.inner_text()
-    print ('Airlenes :',airlines)
-#    <div class="vmXl vmXl-mod-variant-large" bis_skin_checked="1">
-#       <span>11:40 pm</span>
-#       <span class="aOlM"> – </span>
-#       <span>7:50 am<sup class="VY2U-adendum" title="Flight lands the next day">+1</sup></span></div>
-
-    time_city_element_list = await trip_element.query_selector_all('div.vmXl.vmXl-mod-variant-large > *')
+              
+    # <div data-testid="flight_card_segment_departure_time_0" class="Text-module__root--variant-strong_1___SNYxf">23:40</div>
+    # <div data-testid="flight_card_segment_destination_time_0" class="Text-module__root--variant-strong_1___SNYxf">07:50</div>
+    time_city_element_list = await trip_element.query_selector_all('div.Text-module__root--variant-strong_1___SNYxf')
     
     time_element = time_city_element_list[0]
     start_time = await time_element.inner_text()
@@ -113,7 +106,7 @@ async def getTrip(trip_element) -> AirlinesTime:
     # start_city = await city_element.inner_text()
     # print('start_city',start_city)
     
-    time_element = time_city_element_list[2]
+    time_element = time_city_element_list[1]
     end_time = await time_element.inner_text()
     end_time = end_time.split('+')[0]
     end_time = end_time.split('-')[0]
@@ -121,7 +114,7 @@ async def getTrip(trip_element) -> AirlinesTime:
     # city_element = time_city_element_list[1]
     # end_city = await city_element.inner_text()
     # print('end_city',end_city)
-    return AirlinesTime( airlines, start_time,end_time) 
+    return start_time, end_time 
 
 
  #write a code for         
@@ -170,27 +163,20 @@ async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_dat
             itinerary.return_airlines = await airlines_names[1].inner_text() 
             print('Travel Airlines ',itinerary.travel_airlines)
             print('Return Airlines ',itinerary.return_airlines)
-            continue
-        
+            
             # <div class="css-13ekbfz"><div class="css-1rgw82s"><div class="css-k456he"><div class="css-3gojea"><div class="css-3gojea" style="grid-area: row1 / col1 / span 2 / span 2; background-image: url(&quot;https://r-xx.bstatic.com/data/airlines_logo/SQ.png&quot;);"></div></div></div></div><div class="css-1oe9l2q"><div class="css-1niqckn"><div class="css-io4ta2"><div class="css-1yl6p1k" style="text-align: left;"><div data-testid="flight_card_segment_departure_time_0" class="Text-module__root--variant-strong_1___SNYxf">23:40</div><div class="css-5nu86q"><div data-testid="flight_card_segment_departure_airport_0" class="Text-module__root--variant-small_1___+fbYj">LAX</div><div class="Text-module__root--variant-small_1___+fbYj css-1n4sh5k"> . </div><div data-testid="flight_card_segment_departure_date_0" class="Text-module__root--variant-small_1___+fbYj">14 Oct</div></div></div><div class="css-1wnqz2m" style="width: 50%;"><div data-testid="flight_card_segment_duration_0" aria-hidden="true" class="Text-module__root--variant-small_1___+fbYj css-ylq2vz">17h 10m</div><div class="HiddenVisually-module__root___CwnlX">17 hours 10 minutes</div><div class="css-1myv4yh" style="width: 100%; position: relative;"><hr class="Divider-module__root___PSOwi Divider-module__root--vertical-false___zS2cP css-5xx381"></div><div data-testid="flight_card_segment_stops_0" class="Text-module__root--variant-small_1___+fbYj css-ylq2vz">Direct</div></div><div class="css-1yl6p1k" style="text-align: right;"><div data-testid="flight_card_segment_destination_time_0" class="Text-module__root--variant-strong_1___SNYxf">07:50</div><div class="css-yyi517"><div data-testid="flight_card_segment_destination_airport_0" class="Text-module__root--variant-small_1___+fbYj">SIN</div><div class="Text-module__root--variant-small_1___+fbYj css-1n4sh5k"> . </div><div data-testid="flight_card_segment_destination_date_0" class="Text-module__root--variant-small_1___+fbYj">16 Oct</div></div></div></div></div></div></div>
             trips = await trip_element.query_selector_all("div.css-13ekbfz")
             for index, trip in enumerate(trips):
                 print (index , await trip.text_content())
                 # print(index,trip)
                 print("Flight ",index)
-                travel_details = await getTrip(trips[0]) 
-                itinerary.travel_airlines = travel_details.airlines_name
-                itinerary.travel_start_time = travel_details.start_time
-                itinerary.travel_end_time = travel_details.end_time
+                itinerary.travel_start_time, itinerary.travel_end_time = await getTrip(trips[0]) 
                 #Return Details
-                return_details = await getTrip(trips[1]) 
-                itinerary.return_airlines = return_details.airlines_name
-                itinerary.return_start_time = return_details.start_time
-                itinerary.return_end_time = return_details.end_time
+                itinerary.return_start_time, itinerary.return_end_time = await getTrip(trips[1]) 
 
             itinerary_list.append(itinerary)
         
-        # await save_itinerary_to_json(sort_by)
+        await save_itinerary_to_json(sort_by)
         
         await page.content()
         await browser.close()
@@ -211,4 +197,4 @@ if __name__ == "__main__":
     sort_by_best ='BEST'
     sort_by_cheapest ='CHEAPEST'
     sort_by_fastest ='FASTEST'
-    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_best))
+    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_fastest))
