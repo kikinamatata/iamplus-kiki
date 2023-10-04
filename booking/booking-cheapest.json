@@ -1,6 +1,6 @@
 [
     {
-        "price": "$2,390.61",
+        "price": "INR199,311.93",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -19,7 +19,7 @@
         }
     },
     {
-        "price": "$2,484.62",
+        "price": "INR207,187.32",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -38,7 +38,7 @@
         }
     },
     {
-        "price": "$2,864.38",
+        "price": "INR238,979.54",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -57,7 +57,7 @@
         }
     },
     {
-        "price": "$2,948.88",
+        "price": "INR245,991.65",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -76,7 +76,7 @@
         }
     },
     {
-        "price": "$3,045.00",
+        "price": "INR253,967.92",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -95,7 +95,7 @@
         }
     },
     {
-        "price": "$3,426.21",
+        "price": "INR285,708.83",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",

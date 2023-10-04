@@ -173,13 +173,10 @@ async def skyscanner_scrape_website(city1_code,city2_code,travel_date,return_dat
             
             # <div class="css-13ekbfz"><div class="css-1rgw82s"><div class="css-k456he"><div class="css-3gojea"><div class="css-3gojea" style="grid-area: row1 / col1 / span 2 / span 2; background-image: url(&quot;https://r-xx.bstatic.com/data/airlines_logo/SQ.png&quot;);"></div></div></div></div><div class="css-1oe9l2q"><div class="css-1niqckn"><div class="css-io4ta2"><div class="css-1yl6p1k" style="text-align: left;"><div data-testid="flight_card_segment_departure_time_0" class="Text-module__root--variant-strong_1___SNYxf">23:40</div><div class="css-5nu86q"><div data-testid="flight_card_segment_departure_airport_0" class="Text-module__root--variant-small_1___+fbYj">LAX</div><div class="Text-module__root--variant-small_1___+fbYj css-1n4sh5k"> . </div><div data-testid="flight_card_segment_departure_date_0" class="Text-module__root--variant-small_1___+fbYj">14 Oct</div></div></div><div class="css-1wnqz2m" style="width: 50%;"><div data-testid="flight_card_segment_duration_0" aria-hidden="true" class="Text-module__root--variant-small_1___+fbYj css-ylq2vz">17h 10m</div><div class="HiddenVisually-module__root___CwnlX">17 hours 10 minutes</div><div class="css-1myv4yh" style="width: 100%; position: relative;"><hr class="Divider-module__root___PSOwi Divider-module__root--vertical-false___zS2cP css-5xx381"></div><div data-testid="flight_card_segment_stops_0" class="Text-module__root--variant-small_1___+fbYj css-ylq2vz">Direct</div></div><div class="css-1yl6p1k" style="text-align: right;"><div data-testid="flight_card_segment_destination_time_0" class="Text-module__root--variant-strong_1___SNYxf">07:50</div><div class="css-yyi517"><div data-testid="flight_card_segment_destination_airport_0" class="Text-module__root--variant-small_1___+fbYj">SIN</div><div class="Text-module__root--variant-small_1___+fbYj css-1n4sh5k"> . </div><div data-testid="flight_card_segment_destination_date_0" class="Text-module__root--variant-small_1___+fbYj">16 Oct</div></div></div></div></div></div></div>
             trips = await trip_element.query_selector_all("div.css-13ekbfz")
-            for index, trip in enumerate(trips):
-                print (index , await trip.text_content())
-                # print(index,trip)
-                print("Flight ",index)
-                itinerary.travel_start_time, itinerary.travel_end_time = await getTrip(trips[0]) 
-                #Return Details
-                itinerary.return_start_time, itinerary.return_end_time = await getTrip(trips[1]) 
+            
+            itinerary.travel_start_time, itinerary.travel_end_time = await getTrip(trips[0]) 
+            #Return Details
+            itinerary.return_start_time, itinerary.return_end_time = await getTrip(trips[1]) 
 
             itinerary_list.append(itinerary)
         
