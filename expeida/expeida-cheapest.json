@@ -1,0 +1,72 @@
+[
+    {
+        "price": "$527",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Delta \u2022 Delta 9045 and 7662 operated by Korean Air",
+            "start_time": "11:50am",
+            "end_time": "5:00am"
+        }
+    },
+    {
+        "price": "$528",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Multiple airlines \u2022 Delta 9045 operated by Korean Air",
+            "start_time": "11:50am",
+            "end_time": "5:00am"
+        }
+    },
+    {
+        "price": "$529",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Korean Air",
+            "start_time": "11:50am",
+            "end_time": "5:00am"
+        }
+    },
+    {
+        "price": "$532",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Multiple airlines \u2022 Delta 7861 operated by Korean Air",
+            "start_time": "8:20am",
+            "end_time": "12:25am"
+        }
+    },
+    {
+        "price": "$730",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Starlux Airlines",
+            "start_time": "12:10am",
+            "end_time": "1:40pm"
+        }
+    }
+]
