@@ -1,6 +1,6 @@
 [
     {
-        "price": "$2,378",
+        "price": "$2,368",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -19,7 +19,7 @@
         }
     },
     {
-        "price": "$2,456",
+        "price": "$2,455",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -38,7 +38,7 @@
         }
     },
     {
-        "price": "$3,548",
+        "price": "$3,879",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -57,26 +57,7 @@
         }
     },
     {
-        "price": "$1,772",
-        "airport1_code": "lax",
-        "airport2_code": "sin",
-        "airport1_name": "Los Angeles International Airport",
-        "airport2_name": "Singapore Changi International Airport",
-        "travel_date": "231014",
-        "return_date": "231020",
-        "travel": {
-            "airlines": "Philippine Airlines",
-            "start_time": "12:50 PM",
-            "end_time": "11:10 PM"
-        },
-        "return": {
-            "airlines": "Singapore Airlines",
-            "start_time": "6:40 PM",
-            "end_time": "7:35 PM"
-        }
-    },
-    {
-        "price": "$1,789",
+        "price": "$1,864",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -95,7 +76,26 @@
         }
     },
     {
-        "price": "$3,250",
+        "price": "$1,898",
+        "airport1_code": "lax",
+        "airport2_code": "sin",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "231014",
+        "return_date": "231020",
+        "travel": {
+            "airlines": "Philippine Airlines",
+            "start_time": "12:50 PM",
+            "end_time": "11:10 PM"
+        },
+        "return": {
+            "airlines": "Singapore Airlines",
+            "start_time": "6:40 PM",
+            "end_time": "7:35 PM"
+        }
+    },
+    {
+        "price": "$4,036",
         "airport1_code": "lax",
         "airport2_code": "sin",
         "airport1_name": "Los Angeles International Airport",
@@ -130,25 +130,6 @@
             "airlines": "Singapore Airlines",
             "start_time": "9:25 AM",
             "end_time": "12:50 PM"
-        }
-    },
-    {
-        "price": "$2,701",
-        "airport1_code": "lax",
-        "airport2_code": "sin",
-        "airport1_name": "Los Angeles International Airport",
-        "airport2_name": "Singapore Changi International Airport",
-        "travel_date": "231014",
-        "return_date": "231020",
-        "travel": {
-            "airlines": "Singapore Airlines",
-            "start_time": "8:20 AM",
-            "end_time": "7:10 PM"
-        },
-        "return": {
-            "airlines": "Singapore Airlines",
-            "start_time": "8:45 PM",
-            "end_time": "9:40 PM"
         }
     }
 ]

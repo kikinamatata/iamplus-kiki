@@ -6,7 +6,6 @@ from typing import List
 import datetime
 import re
 import time
-import os
 
 
 class AirlinesTime:
@@ -82,18 +81,12 @@ async def my_print(element,name):
 # Function to save  instances to a JSON file
 async def save_itinerary_to_json(file_prefix = 'Best'):
     file_prefix = file_prefix.lower()
-    # Define the folder path
-    folder_path = "booking"
-    # Check if the folder exists, and if not, create it
-    if not os.path.exists(folder_path):
-     os.makedirs(folder_path)
-    # Define the file path
-    file_path = os.path.join(folder_path, folder_path +'-' + file_prefix+'.json')
+    json_file = 'booking-'+file_prefix+'.json'
     serialized_list = []
     for item in itinerary_list:
         serialized_list.append(item.to_json())
         # break
-    with open(file_path, 'w') as json_file:
+    with open(json_file, 'w') as json_file:
         json.dump(serialized_list, json_file, indent=4)      
 
 
@@ -204,4 +197,4 @@ if __name__ == "__main__":
     sort_by_best ='BEST'
     sort_by_cheapest ='CHEAPEST'
     sort_by_fastest ='FASTEST'
-    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_cheapest))
+    asyncio.run(skyscanner_scrape_website(city1,city2,travel_date,return_date,city1_name,city2_name,sort_by_fastest))
