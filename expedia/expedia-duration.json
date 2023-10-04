@@ -1,0 +1,97 @@
+[
+    {
+        "price": "$2584",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Singapore Airlines",
+            "start_time": "8:50pm",
+            "end_time": "5:30am"
+        },
+        "return": {
+            "airlines": "Singapore Airlines",
+            "start_time": "6:50pm",
+            "end_time": "6:00pm"
+        }
+    },
+    {
+        "price": "$2584",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Singapore Airlines",
+            "start_time": "11:25pm",
+            "end_time": "8:05am"
+        },
+        "return": {
+            "airlines": "Singapore Airlines",
+            "start_time": "8:45pm",
+            "end_time": "7:55pm"
+        }
+    },
+    {
+        "price": "$2254",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "Singapore Airlines",
+            "start_time": "1:45pm",
+            "end_time": "1:20am"
+        },
+        "return": {
+            "airlines": "Japan Airlines",
+            "start_time": "8:15am",
+            "end_time": "9:50am"
+        }
+    },
+    {
+        "price": "$1946",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "United",
+            "start_time": "7:20pm",
+            "end_time": "7:00am"
+        },
+        "return": {
+            "airlines": "American Airlines \u2022 American Airlines 8413 and 8408 operated by Japan Airlines",
+            "start_time": "8:15am",
+            "end_time": "9:50am"
+        }
+    },
+    {
+        "price": "$2153",
+        "airport1_code": "LAX",
+        "airport2_code": "SIN",
+        "airport1_name": "Los Angeles International Airport",
+        "airport2_name": "Singapore Changi International Airport",
+        "travel_date": "11/1/2023",
+        "return_date": "11/8/2023",
+        "travel": {
+            "airlines": "EVA Airways",
+            "start_time": "12:30am",
+            "end_time": "12:10pm"
+        },
+        "return": {
+            "airlines": "EVA Airways",
+            "start_time": "1:15pm",
+            "end_time": "3:00pm"
+        }
+    }
+]

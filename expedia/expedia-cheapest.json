@@ -1,6 +1,6 @@
 [
     {
-        "price": "$527",
+        "price": "$1051",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -11,10 +11,15 @@
             "airlines": "Delta \u2022 Delta 9045 and 7662 operated by Korean Air",
             "start_time": "11:50am",
             "end_time": "5:00am"
+        },
+        "return": {
+            "airlines": "Saudi Arabian Airlines",
+            "start_time": "5:00pm",
+            "end_time": "3:05pm"
         }
     },
     {
-        "price": "$528",
+        "price": "$1175",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -25,10 +30,15 @@
             "airlines": "Multiple airlines \u2022 Delta 9045 operated by Korean Air",
             "start_time": "11:50am",
             "end_time": "5:00am"
+        },
+        "return": {
+            "airlines": "Philippine Airlines",
+            "start_time": "8:00pm",
+            "end_time": "8:15am"
         }
     },
     {
-        "price": "$529",
+        "price": "$1210",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -39,10 +49,15 @@
             "airlines": "Korean Air",
             "start_time": "11:50am",
             "end_time": "5:00am"
+        },
+        "return": {
+            "airlines": "Starlux Airlines",
+            "start_time": "3:00pm",
+            "end_time": "7:00pm"
         }
     },
     {
-        "price": "$532",
+        "price": "$1310",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -53,10 +68,15 @@
             "airlines": "Multiple airlines \u2022 Delta 7861 operated by Korean Air",
             "start_time": "8:20am",
             "end_time": "12:25am"
+        },
+        "return": {
+            "airlines": "Philippine Airlines",
+            "start_time": "12:20am",
+            "end_time": "8:15am"
         }
     },
     {
-        "price": "$730",
+        "price": "$1536",
         "airport1_code": "LAX",
         "airport2_code": "SIN",
         "airport1_name": "Los Angeles International Airport",
@@ -67,6 +87,11 @@
             "airlines": "Starlux Airlines",
             "start_time": "12:10am",
             "end_time": "1:40pm"
+        },
+        "return": {
+            "airlines": "Turkish Airlines",
+            "start_time": "11:35pm",
+            "end_time": "10:55am"
         }
     }
 ]

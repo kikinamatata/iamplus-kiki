@@ -51,11 +51,11 @@ class Itinerary:
                            "start_time":self.travel_start_time,
                            "end_time":self.travel_end_time,
                     },
-                    # "return":{
-                    #        "airlines":self.return_airlines,
-                    #        "start_time":self.return_start_time,
-                    #        "end_time":self.return_end_time,
-                    # },
+                    "return":{
+                           "airlines":self.return_airlines,
+                           "start_time":self.return_start_time,
+                           "end_time":self.return_end_time,
+                    },
                 }
         return json_node    
     
