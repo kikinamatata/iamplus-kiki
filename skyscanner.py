@@ -1,16 +1,11 @@
 import asyncio
-from playwright.async_api import async_playwright
-from playwright._impl._page import Page
-from playwright.sync_api import ElementHandle
-from typing import List
-import datetime
 import re
-import os
-import time
-import json
-from scraper import Scraper
-from scraper import Itinerary
+
+from playwright.async_api import async_playwright
+
 from scraper import AirlinesTime
+from scraper import Itinerary
+from scraper import Scraper
 
 
 class SkyScanner(Scraper):

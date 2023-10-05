@@ -1,16 +1,11 @@
 import asyncio
-from playwright.async_api import async_playwright
-from playwright._impl._page import Page
-from playwright.sync_api import ElementHandle
-from typing import List
-import datetime
-import re
-import time
-from scraper import Scraper
-from scraper import Itinerary
-from scraper import AirlinesTime
-
 from collections import namedtuple
+
+from playwright.async_api import async_playwright
+from playwright.sync_api import ElementHandle
+
+from scraper import Itinerary
+from scraper import Scraper
 
 # Define a named tuple for the result
 Result = namedtuple("Result", ["price", "airlines_name", "start_time", "end_time"])
