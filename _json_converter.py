@@ -1,8 +1,8 @@
 import json
 
-# Step 1: Load JSON data from the file
-with open('airports.json', 'r') as json_file:
-    data = json.load(json_file)
+# # Step 1: Load JSON data from the file
+# with open('airports.json', 'r') as json_file:
+#     data = json.load(json_file)
 
 def convert_airports_dictionary():
     output_file_name = 'airports_dict.json'
@@ -35,4 +35,26 @@ def convert_airports_small():
     print(f'Data has been modified and saved back to {output_file_name}')
 
 # convert_airports_dictionary()   
-convert_airports_small()
+# convert_airports_small()
+
+
+import os
+import json
+
+# Your JSON data
+data = {
+    "key1": "value1",
+    "key2": "value2"
+}
+
+# Get the current working directory
+current_directory = os.getcwd()
+
+# Define the file path for saving the JSON file in the current directory
+file_path = os.path.join(current_directory, "output.json")
+
+# Save the JSON data to the file
+with open(file_path, 'w') as json_file:
+    json.dump(data, json_file)
+
+print(f"JSON data saved to {file_path}")

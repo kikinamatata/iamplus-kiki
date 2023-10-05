@@ -87,6 +87,7 @@ class Scraper:
     async def my_print(element,name):
             text = await element.inner_html()
             print (name, text)
+    
 
     # Function to save  instances to a JSON file
     async def save_itinerary_to_json(self,folder_name:str,  file_prefix = 'Best'):
@@ -101,7 +102,16 @@ class Scraper:
                 serialized_list.append(item.to_json())
                 # break
             with open(file_path, 'w') as json_file:
-                json.dump(serialized_list, json_file, indent=4)    
+                json.dump(serialized_list, json_file, indent=4)
+                    
+            # Define the directory path for saving the JSON file
+            # directory_path = os.path.join(os.getcwd(), "data", "skyscanner")
+
+            # # Create the directory if it doesn't exist
+            # os.makedirs(directory_path, exist_ok=True)
+
+            # # Define the file path within the directory
+            # file_path = os.path.join(directory_path, "output.json")    
 
                    
 
