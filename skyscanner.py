@@ -114,7 +114,8 @@ class SkyScanner(Scraper):
 
         await self.save_itinerary_to_json(json_folder_name, sort_by)
 
-        await page.content()
+        # Close the page and browser when done
+        await page.close(run_before_unload=False)
         await browser.close()
 
 
